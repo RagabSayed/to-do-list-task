@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>ToDoList</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.css">
+        
+    </head>
+
+    <body>
+        <!-- //////////////// Page Header -->
+        <header>
+            <nav>
+                <div class="list-header">
+                    <ul>
+                        <li><h2>To Do List</h2></li>
+                        <li><a href="index.html">Waiting List</a></li>
+                        <li><a>Running List</a></li>
+                        <li><a href="endlist.html">Ended List</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ///////////  Table to show Running list -->
+        <section class="add-show-list">
+            <div class="wait-list">
+                <table>
+                    <caption>Waiting List Items</caption>
+                    <thead>
+                        <tr>
+                            <th style="width:40%">Task Desc</th>
+                            <th style="width:20%">Start Run Date & Time</th>
+                            <th style="width:10%">Statues</th>
+                            <th style="width:10%">Pause Run</th>
+                            <th style="width:10%">End Task</th>
+                        </tr>
+                    </thead>
+                    <tbody class="run-row-table-details">
+                        <tr >
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><i class="fa-regular fa-circle-pause" id="pauseRun"></i></td>
+                            <td><i class="fa-solid fa-hourglass-end"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <!-- <script src="./js/script.js"></script> -->
+        <script src="./js/runlist.js"></script>
+    </body>
+
+</html>

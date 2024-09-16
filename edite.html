@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>ToDoList</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.css">
+        
+    </head>
+
+    <body>
+        <!-- //////////////// Page Header -->
+        <header>
+            <nav>
+                <div class="list-header">
+                    <ul>
+                        <li><h2>To Do List</h2></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- /////////// Form to Edit Current task  -->
+        <section class="add-show-list">
+            <form class="edit-form" action="add-task-form" autocomplete="off">
+                <div class="edit-task">
+                    <div class="item1">
+                        <label for="">Task Desc</label>
+                        <input type="text" name="desc" id="taskDesc" required>
+                    </div>
+                    <div class="item23">
+                        <div class="item2">
+                            <label for="">Start Date</label>
+                            <input type="date" name="date" id="startDate" required>
+                        </div>
+                        <div class="item3">
+                            <label for="">Start Time</label>
+                            <input type="time" name="time" id="startTime" required>
+                        </div>
+                    </div>
+                    
+                </div>
+                <input class="edit-task-btn" type="button" value="Save Edited Task">
+            </form>
+        </section>
+        <!-- <script src="./js/script.js"></script> -->
+        <script src="./js/edite.js"></script>
+    </body>
+
+</html>

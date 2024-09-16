@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>ToDoList</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.css">
+        
+    </head>
+
+    <body>
+        <!-- //////////////// Page Header -->
+        <header>
+            <nav>
+                <div class="list-header">
+                    <ul>
+                        <li><h2>To Do List</h2></li>
+                        <li><a>Waiting List</a></li>
+                        <li><a href="./runlist.html">Running List</a></li>
+                        <li><a href="endlist.html">Ended List</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- /////////// Form to add new task && Table to show wating list -->
+        <section class="add-show-list">
+            <!-- /////////// Form to add new task -->
+            <form action="add-task-form" autocomplete="off">
+                <div class="add-to-list">
+                    <div class="item1">
+                        <label for="">Task Desc</label>
+                        <input type="text" name="desc" id="taskDesc" required>
+                    </div>
+                    <div class="item2">
+                        <label for="">Start Date</label>
+                        <input type="date" name="date" id="startDate" required>
+                    </div>
+                    <div class="item3">
+                        <label for="">Start Time</label>
+                        <input type="time" name="time" id="startTime" required>
+                    </div>
+                </div>
+                <input class="add-to-list-btn" type="button" value="Add To List">
+            </form>
+            <!-- ///////////  Table to show wating list -->
+            <div class="wait-list">
+                <table>
+                    <caption>Waiting List Items</caption>
+                    <thead>
+                        <tr>
+                            <th style="width:50%">Task Desc</th>
+                            <th style="width:10%">Start Date</th>
+                            <th style="width:10%">Start Time</th>
+                            <th style="width:10%">Run</th>
+                            <th style="width:10%">Edite</th>
+                            <th style="width:10%">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody class="row-table-details">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><i class="fa-regular fa-circle-play"></i></td>
+                            <td><i class="fa-regular fa-pen-to-square"></i></td>
+                            <td><i class="fa-regular fa-trash-can"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <script src="./js/script.js"></script>
+    </body>
+
+</html>
